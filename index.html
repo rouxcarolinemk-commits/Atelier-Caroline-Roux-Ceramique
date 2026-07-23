@@ -1,140 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Atelier Caroline Roux — Céramique artisanale en Savoie</title>
-  <meta name="description" content="Atelier Caroline Roux, céramique artisanale en petites séries à Saint-Baldoph, près de Chambéry. Pièces utilitaires façonnées à la main.">
-  <meta property="og:title" content="Atelier Caroline Roux — Céramique artisanale">
-  <meta property="og:description" content="Des objets du quotidien façonnés à la main, en Savoie.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#f4f0e9">
+  <meta name="description" content="Céramique artisanale façonnée à la main à Saint-Baldoph, en Savoie. Pièces utilitaires en petites séries.">
+  <meta name="theme-color" content="#f3eee5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Retour en haut">
-      <span>Atelier</span>
-      <strong>Caroline Roux</strong>
+  <header class="topbar">
+    <a class="identity" href="#accueil">
+      <img src="assets/logo.jpg" alt="Monogramme CR">
+      <span>Atelier Caroline Roux</span>
     </a>
-
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-
-    <nav class="main-nav" aria-label="Navigation principale">
-      <a href="#pieces">Pièces</a>
+    <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+    <nav>
+      <a href="#pieces">Les pièces</a>
       <a href="#atelier">L’atelier</a>
-      <a href="#demarche">Démarche</a>
+      <a href="#demarche">La démarche</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <img src="images/hero.svg" alt="Pièces en céramique de l’Atelier Caroline Roux">
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow">Céramique artisanale · Savoie</p>
-        <h1>La terre.<br>Le geste.<br>Le temps.</h1>
-        <a class="text-link light" href="#pieces">Découvrir les pièces <span>↘</span></a>
+    <section class="hero" id="accueil">
+      <img src="assets/hero.jpg" alt="Coupe en céramique garnie d'abricots devant les montagnes">
+      <div class="veil"></div>
+      <div class="hero-copy reveal">
+        <p>Céramique artisanale · Savoie</p>
+        <h1>Atelier<br>Caroline Roux</h1>
+        <span>Objets du quotidien façonnés à la main.</span>
       </div>
     </section>
 
-    <section class="intro section">
-      <div class="intro-title reveal">
-        <p class="eyebrow">Atelier Caroline Roux</p>
-        <h2>Des objets du quotidien, tournés et façonnés à la main.</h2>
+    <section class="intro wrap">
+      <div class="reveal">
+        <p class="kicker">La terre. Le geste. Le temps.</p>
+        <h2>Des pièces simples, sensibles et durables.</h2>
       </div>
       <div class="intro-text reveal">
         <p>Je crée des pièces utilitaires en petites séries dans mon atelier de Saint-Baldoph, près de Chambéry.</p>
-        <p>Chaque tasse, bol ou pichet conserve la trace du geste et les nuances propres à la terre et à la cuisson.</p>
+        <p>Chaque pièce garde la trace du geste, les nuances de la terre et les variations de la cuisson.</p>
       </div>
     </section>
 
-    <section class="gallery section" id="pieces">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Sélection</p>
+    <section class="pieces wrap" id="pieces">
+      <div class="section-title reveal">
+        <p class="kicker">Sélection</p>
         <h2>Les pièces</h2>
-        <p>Une collection sobre et vivante, pensée pour accompagner les gestes de tous les jours.</p>
       </div>
 
-      <div class="gallery-grid">
-        <figure class="gallery-item large reveal">
-          <img src="images/piece-1.svg" alt="Tasses artisanales en céramique">
-          <figcaption><span>Tasses</span><span>Petites séries</span></figcaption>
+      <div class="masonry">
+        <figure class="wide reveal">
+          <img src="assets/red-bowls.jpg" alt="Bols en terre rouge dans l'atelier">
+          <figcaption><span>Terres brutes</span><span>Petites séries</span></figcaption>
         </figure>
-        <figure class="gallery-item reveal">
-          <img src="images/piece-2.svg" alt="Bol artisanal en grès">
-          <figcaption><span>Bols</span><span>Grès</span></figcaption>
+
+        <figure class="tall reveal">
+          <img src="assets/bird-box.jpg" alt="Boîte en céramique surmontée d'un petit oiseau">
+          <figcaption><span>Pièces singulières</span><span>Façonnées à la main</span></figcaption>
         </figure>
-        <figure class="gallery-item reveal">
-          <img src="images/piece-3.svg" alt="Pichet artisanal en céramique">
-          <figcaption><span>Pichets</span><span>Pièces uniques</span></figcaption>
+
+        <figure class="square reveal">
+          <img src="assets/white-pieces.jpg" alt="Tasses et plats en céramique blanche crue">
+          <figcaption><span>Avant la cuisson</span><span>Le travail en série</span></figcaption>
         </figure>
-        <figure class="gallery-item wide reveal">
-          <img src="images/piece-4.svg" alt="Collection de céramiques artisanales">
-          <figcaption><span>Collections</span><span>Terres &amp; émaux</span></figcaption>
+
+        <figure class="square reveal">
+          <img src="assets/breakfast.jpg" alt="Bol en céramique utilisé au petit-déjeuner">
+          <figcaption><span>Objets du quotidien</span><span>Faits pour vivre</span></figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="atelier section" id="atelier">
+    <section class="atelier-block" id="atelier">
       <div class="atelier-image reveal">
-        <img src="images/atelier.svg" alt="L’atelier de céramique Caroline Roux">
+        <img src="assets/at-kiln.jpg" alt="Caroline Roux devant son four de céramique">
       </div>
-      <div class="atelier-copy reveal">
-        <p class="eyebrow">Le lieu</p>
-        <h2>L’atelier</h2>
-        <p>Un espace de travail installé à Saint-Baldoph, au pied des montagnes.</p>
-        <p>C’est ici que les pièces sont tournées, séchées, émaillées puis cuites, lentement, en petites quantités.</p>
-        <a class="text-link" href="#contact">Venir à l’atelier <span>↘</span></a>
-      </div>
-    </section>
-
-    <section class="quote">
-      <div class="reveal">
-        <p>« Créer des objets simples, sensibles et durables, que l’on a plaisir à prendre en main chaque jour. »</p>
+      <div class="atelier-text reveal">
+        <p class="kicker">L’atelier</p>
+        <h2>Façonné en Savoie.</h2>
+        <p>Les pièces sont tournées, modelées, émaillées puis cuites dans mon atelier, à Saint-Baldoph, au pied des montagnes.</p>
+        <p>Je travaille en petites quantités, au rythme des séchages et des cuissons.</p>
       </div>
     </section>
 
-    <section class="process section" id="demarche">
-      <div class="section-heading reveal">
-        <p class="eyebrow">La démarche</p>
-        <h2>De la terre à l’objet</h2>
-      </div>
+    <section class="quote reveal">
+      <p>« Créer des objets que l’on a plaisir à prendre en main, à utiliser et à garder. »</p>
+    </section>
 
-      <div class="process-grid">
-        <article class="reveal">
-          <span>01</span>
-          <h3>Façonner</h3>
-          <p>Les pièces sont tournées ou modelées une à une. Les légères variations font partie de leur caractère.</p>
-        </article>
-        <article class="reveal">
-          <span>02</span>
-          <h3>Émailler</h3>
-          <p>Les émaux sont choisis pour révéler la matière et laisser une place visible à la terre brute.</p>
-        </article>
-        <article class="reveal">
-          <span>03</span>
-          <h3>Cuire</h3>
-          <p>Chaque cuisson transforme les matières et produit des nuances qui ne sont jamais parfaitement identiques.</p>
-        </article>
+    <section class="door wrap" id="demarche">
+      <div class="door-copy reveal">
+        <p class="kicker">La démarche</p>
+        <h2>Entrer dans l’atelier.</h2>
+        <p>La matière, les formes et les usages guident chaque collection. Les irrégularités légères et les variations d’émail font partie du caractère de chaque pièce.</p>
+      </div>
+      <div class="door-image reveal">
+        <img src="assets/atelier-door.jpg" alt="Porte ouverte de l'atelier Caroline Roux">
       </div>
     </section>
 
-    <section class="contact section" id="contact">
-      <div class="contact-image reveal">
-        <img src="images/contact.svg" alt="Détail d’une céramique artisanale">
+    <section class="living wrap">
+      <div class="living-copy reveal">
+        <p class="kicker">Au quotidien</p>
+        <h2>Des objets faits pour accompagner la vie.</h2>
       </div>
-      <div class="contact-copy reveal">
-        <p class="eyebrow">Contact</p>
+      <div class="living-image reveal">
+        <img src="assets/terrace.jpg" alt="Pichet et assiette en céramique sur une terrasse">
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner reveal">
+        <img src="assets/logo.jpg" alt="">
+        <p class="kicker">Contact</p>
         <h2>Voir les pièces<br>et venir à l’atelier</h2>
         <p>Les pièces sont visibles à l’atelier sur rendez-vous.</p>
-        <div class="contact-links">
+        <div class="links">
           <a href="mailto:VOTRE-EMAIL@EXEMPLE.FR">VOTRE-EMAIL@EXEMPLE.FR</a>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
           <span>Saint-Baldoph · Savoie</span>
@@ -144,12 +130,8 @@
   </main>
 
   <footer>
-    <a class="brand footer-brand" href="#top">
-      <span>Atelier</span>
-      <strong>Caroline Roux</strong>
-    </a>
-    <p>© <span id="year"></span> Atelier Caroline Roux</p>
-    <a href="#top">Retour en haut ↑</a>
+    <span>© <span id="year"></span> Atelier Caroline Roux</span>
+    <a href="#accueil">Retour en haut ↑</a>
   </footer>
 
   <script src="script.js"></script>
